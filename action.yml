@@ -1,0 +1,13 @@
+name: "DemoJSAction"
+description: "Display massage"
+inputs:
+  name-of-you: # id of input
+    description: "Your name"
+    required: true
+    default: "GitHub User"
+outputs:
+  time: # id of output
+    description: "The time of the message"
+runs:
+  using: "node12"
+  main: "dist/index.js"
